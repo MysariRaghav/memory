@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="memory.example.com.memory"
+    android:versionCode="6"
+    android:versionName="1.6">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+
+
+        <!--<activity
+            android:name=".MemoryScrollActivity"
+            android:enabled="true"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+
+
+        <activity
+            android:name=".MenuActivity"
+            android:enabled="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <!--                 <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+                 -->
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".PictureActivity"
+            android:enabled="true"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".MemoryScrollActivity"
+            android:enabled="true"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".VideoActivity"
+            android:enabled="true"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".SpeechRecognitionActivity"
+            android:enabled="true"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".FileOperationsWriteActivity"
+            android:enabled="true"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".IntroInstructionsActivity"
+            android:enabled="true"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".RePopulateUIActivity"
+            android:enabled="true"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".PictureInstructionsActivity"
+            android:enabled="true"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".VideoInstructionsActivity"
+            android:enabled="true"
+            android:label="@string/app_name"/>
+
+        <!--<activity
+            android:name=".MemoryScrollActivity"
+            android:enabled="true"
+            android:label="@string/app_name"/>-->
+
+        <activity
+            android:name=".MemoryScrollActivityInstructions"
+            android:enabled="true"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".DeleteMemoriesActivity"
+            android:enabled="true"
+            android:label="@string/app_name"/>
+
+
+        <service
+            android:name=".ElephantService"
+            android:enabled="true"
+            android:exported="true">
+            <!-- android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"> -->
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+
+ 		</intent-filter> -->
+            <!-- <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voice_trigger_start" /> -->
+        </service>
+
+
+
+
+    </application>
+
+</manifest>

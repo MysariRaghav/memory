@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">memory</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="quit">Quit</string>
+    <string name="memory">Create Memory</string>
+    <string name="browseMemories">Browse Memories</string>
+    <string name="deleteMemories">Delete Memories</string>
+</resources>
